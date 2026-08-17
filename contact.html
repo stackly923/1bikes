@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Contact | STACKLY Bikes
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="contact-page">
+  <header class="header">
+   <div class="container nav">
+    <a class="brand" href="/STACKLY-Used-Bike-Marketplace/index.html">
+      <img class="brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+     </a>
+    <nav class="navlinks">
+     <a href="/STACKLY-Used-Bike-Marketplace/index.html">
+      Home
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/about.html">
+      About
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/used-bike.html">
+      Used Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/sell-your-bike.html">
+      Sell Your Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/blog.html">
+      Blog
+     </a>
+     <a href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/contact.html">
+      Contact
+     </a>
+     <a class="mobile-signin-link" href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/signin.html">
+      Sign In
+     </a>
+    </nav>
+    <div class="actions">
+     <a class="btn btn-outline" href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/signin.html">
+      Sign In
+     </a>
+    </div>
+    <button aria-expanded="false" aria-label="Open navigation" class="mobile-toggle btn btn-outline" type="button">
+     <i class="fa-solid fa-bars">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main>
+   <section class="page-hero" style="--page-img:url('assets/images/contact-hero-bg.webp')">
+    <div class="container">
+     <span class="kicker">
+      CONTACT STACKLY BIKES
+     </span>
+     <h1>
+      Need Help With a Bike Deal?
+     </h1>
+     <p>
+      Talk to our team about listings, inspections, valuations, test rides or ownership transfer support.
+     </p>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container split">
+     <div class="panel">
+      <h2>
+       Send an Enquiry
+      </h2>
+      <form class="form" id="enquiryForm">
+       <input class="input" id="enquiryFirstName" placeholder="Your Name" type="text"/>
+       <input class="input" id="enquiryLastName" placeholder="Last Name" type="text"/>
+       <input class="input" id="enquiryEmail" placeholder="Email Address" type="email"/>
+       <input class="input" id="enquiryPhone" inputmode="numeric" maxlength="10" placeholder="Phone Number" type="tel"/>
+       <div class="contact-select" data-contact-select>
+        <button aria-expanded="false" class="contact-select-trigger" type="button">
+         <span>
+          Buying a Bike
+         </span>
+         <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <input name="enquiryType" type="hidden" value="Buying a Bike"/>
+        <div class="contact-select-menu">
+         <button class="active" type="button" data-value="Buying a Bike">
+          Buying a Bike
+         </button>
+         <button type="button" data-value="Selling a Bike">
+          Selling a Bike
+         </button>
+         <button type="button" data-value="Inspection Support">
+          Inspection Support
+         </button>
+         <button type="button" data-value="Transfer Support">
+          Transfer Support
+         </button>
+        </div>
+       </div>
+       <textarea class="input" id="enquiryMessage" placeholder="Tell us how we can help"></textarea>
+       <div aria-live="polite" class="form-message" id="enquiryMessageBox"></div>
+       <button class="btn btn-primary" type="submit">
+        Send Enquiry
+       </button>
+      </form>
+     </div>
+     <div class="contact-info-grid">
+      <article class="contact-info-card">
+       <h3>
+        Marketplace Name
+       </h3>
+       <strong>
+        STACKLY Bikes
+       </strong>
+       <p>
+        Verified used-bike listings, buyer support, seller guidance and ownership assistance.
+       </p>
+      </article>
+      <article class="contact-info-card">
+       <h3>
+        Email
+       </h3>
+       <strong>
+        support@stacklybikes.com
+       </strong>
+       <p>
+        We usually reply to enquiries within one business day.
+       </p>
+      </article>
+      <article class="contact-info-card">
+       <h3>
+        Branch Address
+       </h3>
+       <strong>
+        Begur, Bengaluru
+       </strong>
+       <p>
+        Visit by appointment for bike inspections, deal support and document review.
+       </p>
+      </article>
+      <article class="contact-info-card">
+       <h3>
+        Contact Number
+       </h3>
+       <strong>
+        +91 8000 123 456
+       </strong>
+       <p>
+        Available Monday-Saturday, 9:00 AM-7:00 PM.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section contact-map-section">
+    <div class="container">
+     <div class="section-head">
+      <span class="kicker">
+       BENGALURU BRANCH
+      </span>
+      <h2>
+       Visit STACKLY in Bengaluru
+      </h2>
+      <p>
+       Find the STACKLY Bengaluru branch at Evolve Studio, Begur. Use the live Google Map below for directions and nearby landmarks.
+      </p>
+     </div>
+     <div class="contact-map-grid">
+      <div class="panel contact-location-card">
+       <div class="contact-location-icon">
+        <i class="fa-solid fa-location-dot"></i>
+       </div>
+       <h3>STACKLY Bengaluru Branch Office</h3>
+       <p>
+        Evolve Studio, 4th Floor,<br/>
+        Khata No 10, Begur - Koppa Rd,<br/>
+        in front of SNN Raj Serenity,<br/>
+        Suraksha Nagar, Yelenahalli, Begur,<br/>
+        Bengaluru, Karnataka - 560068
+       </p>
+       <div class="checks">
+        <span><i class="fa-solid fa-envelope"></i> info@thestackly.com</span>
+        <span><i class="fa-solid fa-phone"></i> +91 70107 92745</span>
+       </div>
+       <a class="btn btn-primary map-direction-btn" href="https://www.google.com/maps/search/?api=1&query=Evolve+Studio%2C+4th+Floor%2C+Khata+No+10%2C+Begur+-+Koppa+Rd%2C+Suraksha+Nagar%2C+Yelenahalli%2C+Begur%2C+Bengaluru%2C+Karnataka+560068" target="_blank" rel="noopener">
+        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+       </a>
+      </div>
+      <div class="map-frame-wrap">
+       <iframe
+        title="STACKLY Bengaluru Branch Office Map"
+        src="https://www.google.com/maps?q=Evolve%20Studio%2C%204th%20Floor%2C%20Khata%20No%2010%2C%20Begur%20-%20Koppa%20Rd%2C%20Suraksha%20Nagar%2C%20Yelenahalli%2C%20Begur%2C%20Bengaluru%2C%20Karnataka%20560068&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+       </iframe>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-grid">
+    <div>
+     <a class="brand footer-brand" href="/STACKLY-Used-Bike-Marketplace/index.html">
+      <img class="brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+     </a>
+     <p>
+      Trusted used-bike marketplace for verified second-hand motorcycles, transparent pricing, inspections and secure ownership transfer support.
+     </p>
+     <div class="social-links">
+      <a aria-label="Instagram" href="404.html">
+       <i class="fa-brands fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Facebook" href="404.html">
+       <i class="fa-brands fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="X" href="404.html">
+       <i class="fa-brands fa-x-twitter">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      Marketplace
+     </h3>
+     <a href="/STACKLY-Used-Bike-Marketplace/index.html">
+      Home
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/about.html">
+      About
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/used-bike.html">
+      Used Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/sell-your-bike.html">
+      Sell Your Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/blog.html">
+      Blog
+     </a>
+     <a href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/contact.html">
+      Contact
+     </a>
+    </div>
+    <div>
+     <h3>
+      Buyer &amp; Seller
+     </h3>
+     <a href="404.html">
+      Bike Details
+     </a>
+     <a href="404.html">
+      Sign In
+     </a>
+     <a href="404.html">
+      Register
+     </a>
+     <a href="404.html">
+      My Dashboard
+     </a>
+     <a href="404.html">
+      Admin Dashboard
+     </a>
+     <a href="404.html">
+      Contact Support
+     </a>
+    </div>
+    <div class="footer-contact">
+     <h3>
+      Contact
+     </h3>
+     <p>
+      <i class="fa-solid fa-phone"></i>
+      <span>+91 8000 123 456</span>
+     </p>
+     <p>
+      <i class="fa-solid fa-envelope"></i>
+      <span>support@stacklybikes.com</span>
+     </p>
+     <p>
+      <i class="fa-solid fa-location-dot"></i>
+      <span>HSR Layout, Bengaluru, India</span>
+     </p>
+     <p>
+      <i class="fa-solid fa-clock"></i>
+      <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+     </p>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    <p>
+     © 2026 STACKLY Bikes. All Rights Reserved.
+    </p>
+      <p>
+       <a href="404.html">
+        Verified Bikes &bull; Fair Pricing &bull; Secure Deals
+       </a>
+      </p>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

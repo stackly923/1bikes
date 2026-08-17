@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Create Account | STACKLY Bikes
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="auth-page">
+  <section class="auth auth-modern register-layout">
+   <div class="auth-visual register-bike-visual">
+    <a class="back-home-link" href="index.html">
+     <i class="fa-solid fa-arrow-left">
+     </i>
+     Back to Home
+    </a>
+   </div>
+   <div class="auth-box register-box">
+    <div class="auth-inner register-inner">
+     <a class="brand auth-brand" href="index.html">
+      <img class="brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+     </a>
+     <span class="kicker auth-kicker">
+      CREATE YOUR ACCOUNT
+     </span>
+     <h1>
+      Create Account
+     </h1>
+     <p class="auth-intro">
+      Complete the details below to join the used-bike marketplace.
+     </p>
+     <form class="form auth-form" id="registerForm" novalidate="">
+      <div class="form-grid">
+       <div>
+        <label class="field-label" for="firstName">
+         First Name
+        </label>
+        <input class="input" id="firstName" placeholder="First name" type="text"/>
+       </div>
+       <div>
+        <label class="field-label" for="lastName">
+         Last Name
+        </label>
+        <input class="input" id="lastName" placeholder="Last name" type="text"/>
+       </div>
+      </div>
+      <label class="field-label" for="registerEmail">
+       Email Address
+      </label>
+      <input class="input" id="registerEmail" placeholder="you@example.com" type="email"/>
+      <label class="field-label" for="registerPhone">
+       Mobile Number
+      </label>
+      <input class="input" id="registerPhone" inputmode="numeric" placeholder="10-digit mobile number" type="tel"/>
+      <div class="form-grid">
+       <div>
+        <label class="field-label" for="registerPassword">
+         Password
+        </label>
+        <input class="input" id="registerPassword" placeholder="Create password" type="password"/>
+       </div>
+       <div>
+        <label class="field-label" for="confirmPassword">
+         Confirm Password
+        </label>
+        <input class="input" id="confirmPassword" placeholder="Confirm password" type="password"/>
+       </div>
+      </div>
+      <div aria-live="polite" class="form-message" id="registerMessage">
+      </div>
+      <button class="btn btn-primary auth-submit" type="submit">
+       <i class="fa-solid fa-user-check">
+       </i>
+       Create Account
+      </button>
+      <p class="auth-switch">
+       Already have an account?
+       <a href="signin.html">
+        Sign In
+       </a>
+      </p>
+     </form>
+    </div>
+   </div>
+  </section>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

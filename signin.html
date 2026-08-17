@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Sign In | STACKLY Bikes
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="auth-page">
+  <section class="auth auth-modern">
+   <div class="auth-visual auth-bike-visual">
+    <a class="back-home-link" href="index.html">
+     <i class="fa-solid fa-arrow-left">
+     </i>
+     Back to Home
+    </a>
+   </div>
+   <div class="auth-box">
+    <div class="auth-inner">
+     <a class="brand auth-brand" href="index.html">
+      <img class="brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+     </a>
+     <span class="kicker auth-kicker">
+      WELCOME BACK
+     </span>
+     <h1>
+      Sign In
+     </h1>
+     <p class="auth-intro">
+      Choose your marketplace role and continue to your dedicated dashboard.
+     </p>
+     <form class="form auth-form" id="signinForm" novalidate="">
+      <label class="field-label" for="signinEmail">
+       Email Address
+      </label>
+      <div class="input-icon-wrap">
+       <i class="fa-regular fa-envelope">
+       </i>
+       <input class="input" id="signinEmail" placeholder="you@example.com" type="email"/>
+      </div>
+      <label class="field-label" for="signinPassword">
+       Password
+      </label>
+      <div class="input-icon-wrap">
+       <i class="fa-solid fa-lock">
+       </i>
+       <input class="input" id="signinPassword" placeholder="Enter your password" type="password"/>
+      </div>
+      <label class="field-label" for="signinRole">
+       Role
+      </label>
+      <div class="contact-select custom-select-wrap auth-role-select" data-contact-select="">
+       <button aria-expanded="false" class="contact-select-trigger" type="button">
+        <i class="fa-solid fa-user-tag">
+        </i>
+        <span>
+         Select Role
+        </span>
+        <i class="fa-solid fa-chevron-down">
+        </i>
+       </button>
+       <input id="signinRole" name="role" type="hidden" value=""/>
+       <div class="contact-select-menu">
+        <button data-value="buyer" type="button">
+         Buyer / Customer
+        </button>
+        <button data-value="admin" type="button">
+         Marketplace Admin
+        </button>
+       </div>
+      </div>
+      <div aria-live="polite" class="form-message error-message" id="signinError">
+      </div>
+      <div class="auth-row">
+       <label class="remember">
+        <input type="checkbox"/>
+        <span>
+         Remember me
+        </span>
+       </label>
+       <a class="forgot-link" href="404.html">
+        Forgot Password?
+       </a>
+      </div>
+      <button class="btn btn-primary auth-submit" type="submit">
+       <i class="fa-solid fa-right-to-bracket">
+       </i>
+       Sign In
+      </button>
+      <div class="auth-divider">
+       <span>
+        New to STACKLY Bikes?
+       </span>
+      </div>
+      <a class="btn btn-outline auth-submit" href="register.html">
+       <i class="fa-solid fa-user-plus">
+       </i>
+       Create Account
+      </a>
+     </form>
+    </div>
+   </div>
+  </section>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

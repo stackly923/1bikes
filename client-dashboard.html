@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Buyer Dashboard | STACKLY Bikes
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="dashboard-page">
+  <div class="dash-mobilebar">
+   <a class="dash-mobile-logo" href="index.html">
+    <img class="brand-logo dash-brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+   </a>
+   <button aria-label="Open dashboard menu" class="dash-menu-toggle" type="button">
+    <i class="fa-solid fa-bars">
+    </i>
+   </button>
+  </div>
+  <div class="dashboard-shell">
+   <aside class="dashboard-sidebar">
+    <a class="dash-logo" href="index.html">
+     <img class="brand-logo dash-brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+    </a>
+    <nav class="dash-nav">
+     <button class="dash-link active" data-panel="buyer-overview">
+      <i class="fa-solid fa-chart-pie">
+      </i>
+      <span>
+       Overview
+      </span>
+     </button>
+     <button class="dash-link" data-panel="buyer-saved">
+      <i class="fa-solid fa-heart">
+      </i>
+      <span>
+       Saved Bikes
+      </span>
+     </button>
+     <button class="dash-link" data-panel="buyer-enquiries">
+      <i class="fa-solid fa-comments">
+      </i>
+      <span>
+       My Enquiries
+      </span>
+     </button>
+     <button class="dash-link" data-panel="buyer-rides">
+      <i class="fa-solid fa-calendar-check">
+      </i>
+      <span>
+       Test Rides
+      </span>
+     </button>
+     <button class="dash-link" data-panel="buyer-insights">
+      <i class="fa-solid fa-chart-line">
+      </i>
+      <span>
+       Bike Insights
+      </span>
+     </button>
+     <button class="dash-link" data-panel="buyer-profile">
+      <i class="fa-solid fa-user">
+      </i>
+      <span>
+       Profile
+      </span>
+     </button>
+    </nav>
+    <div class="dash-side-actions">
+     <a href="index.html">
+      <i class="fa-solid fa-house">
+      </i>
+      <span>
+       Home
+      </span>
+     </a>
+     <a href="signin.html">
+      <i class="fa-solid fa-right-from-bracket">
+      </i>
+      <span>
+       Logout
+      </span>
+     </a>
+    </div>
+   </aside>
+   <main class="dashboard-main">
+    <div class="dash-topbar">
+     <div>
+      <span class="kicker">
+       BUYER DASHBOARD
+      </span>
+      <h1>
+       My Bike Marketplace
+      </h1>
+     </div>
+     <div class="dash-user">
+      <div class="avatar">
+       WB
+      </div>
+     <div>
+       <strong>
+        Welcome back
+       </strong>
+       <span data-dashboard-email>
+        buyer@example.com
+       </span>
+      </div>
+     </div>
+    </div>
+    <section class="dash-panel active" id="buyer-overview">
+     <div class="dash-metrics">
+      <article class="dash-metric">
+       <i class="fa-solid fa-heart">
+       </i>
+       <div>
+        <span>
+         Saved Bikes
+        </span>
+        <strong>
+         12
+        </strong>
+        <small>
+         +3 this week
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-message">
+       </i>
+       <div>
+        <span>
+         Active Enquiries
+        </span>
+        <strong>
+         4
+        </strong>
+        <small>
+         2 seller replies
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-calendar-days">
+       </i>
+       <div>
+        <span>
+         Test Rides
+        </span>
+        <strong>
+         2
+        </strong>
+        <small>
+         Next: Saturday
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-indian-rupee-sign">
+       </i>
+       <div>
+        <span>
+         Average Budget
+        </span>
+        <strong>
+         ₹2.1L
+        </strong>
+        <small>
+         Across shortlist
+        </small>
+       </div>
+      </article>
+     </div>
+     <div class="dash-grid two-one">
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          PRICE WATCH
+         </span>
+         <h3>
+          Shortlist Price Movement
+         </h3>
+        </div>
+        <span class="status good">
+         Last 6 months
+        </span>
+       </div>
+       <div class="line-chart">
+        <svg aria-label="Price trend line chart" role="img" viewbox="0 0 640 250">
+         <g class="chart-grid">
+          <line x1="40" x2="620" y1="40" y2="40">
+          </line>
+          <line x1="40" x2="620" y1="95" y2="95">
+          </line>
+          <line x1="40" x2="620" y1="150" y2="150">
+          </line>
+          <line x1="40" x2="620" y1="205" y2="205">
+          </line>
+         </g>
+         <polyline class="line-one" points="40,178 135,160 230,168 325,130 420,142 515,102 610,88">
+         </polyline>
+         <polyline class="line-two" points="40,122 135,134 230,118 325,112 420,98 515,110 610,90">
+         </polyline>
+         <circle class="chart-dot" cx="610" cy="88" r="5">
+         </circle>
+        </svg>
+        <div class="chart-legend">
+         <span>
+          <i class="legend purple">
+          </i>
+          BMW S1000RR
+         </span>
+         <span>
+          <i class="legend soft">
+          </i>
+          KTM Duke 390
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          SHORTLIST MIX
+         </span>
+         <h3>
+          Bike Categories
+         </h3>
+        </div>
+       </div>
+       <div class="pie-wrap">
+        <div class="pie-chart buyer-pie">
+        </div>
+        <div class="pie-legend">
+         <span>
+          <b>
+           42%
+          </b>
+          Sports
+         </span>
+         <span>
+          <b>
+           25%
+          </b>
+          Roadster
+         </span>
+         <span>
+          <b>
+           18%
+          </b>
+          Cruiser
+         </span>
+         <span>
+          <b>
+           15%
+          </b>
+          Commuter
+         </span>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          BUDGET USAGE
+         </span>
+         <h3>
+          Price Range Preference
+         </h3>
+        </div>
+       </div>
+       <div class="bar-chart horizontal">
+        <div>
+         <span>
+          Under ₹1L
+         </span>
+         <div class="bar-track">
+          <i style="width:34%">
+          </i>
+         </div>
+         <b>
+          34%
+         </b>
+        </div>
+        <div>
+         <span>
+          ₹1–2L
+         </span>
+         <div class="bar-track">
+          <i style="width:78%">
+          </i>
+         </div>
+         <b>
+          78%
+         </b>
+        </div>
+        <div>
+         <span>
+          ₹2–3L
+         </span>
+         <div class="bar-track">
+          <i style="width:62%">
+          </i>
+         </div>
+         <b>
+          62%
+         </b>
+        </div>
+        <div>
+         <span>
+          ₹3L+
+         </span>
+         <div class="bar-track">
+          <i style="width:28%">
+          </i>
+         </div>
+         <b>
+          28%
+         </b>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          MATCH SCORE
+         </span>
+         <h3>
+          Your Ideal Bike Profile
+         </h3>
+        </div>
+       </div>
+       <div class="radar-wrap">
+        <svg class="radar-chart" viewbox="0 0 320 280">
+         <polygon class="radar-grid" points="160,25 270,90 235,220 85,220 50,90">
+         </polygon>
+         <polygon class="radar-grid inner" points="160,70 225,108 205,185 115,185 95,108">
+         </polygon>
+         <polygon class="radar-data" points="160,38 250,102 218,203 108,195 72,105">
+         </polygon>
+         <text x="143" y="16">
+          Performance
+         </text>
+         <text x="262" y="92">
+          Value
+         </text>
+         <text x="223" y="245">
+          Comfort
+         </text>
+         <text x="30" y="245">
+          Mileage
+         </text>
+         <text x="2" y="92">
+          Style
+         </text>
+        </svg>
+       </div>
+      </article>
+     </div>
+     <article class="dash-card">
+      <div class="dash-card-head">
+       <div>
+        <span class="kicker">
+         RECENT ACTIVITY
+        </span>
+        <h3>
+         Marketplace Enquiries
+        </h3>
+       </div>
+       <a href="404.html">
+        Browse More Bikes
+       </a>
+      </div>
+      <div class="table-wrap">
+       <table class="table">
+        <tr>
+         <th>
+          Bike
+         </th>
+         <th>
+          Price
+         </th>
+         <th>
+          Seller
+         </th>
+         <th>
+          Activity
+         </th>
+         <th>
+          Status
+         </th>
+        </tr>
+        <tr>
+         <td>
+          BMW S 1000 RR
+         </td>
+         <td>
+          ₹18.90 Lakh
+         </td>
+         <td>
+          Premium Dealer
+         </td>
+         <td>
+          Price enquiry
+         </td>
+         <td>
+          <span class="status good">
+           Reply received
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          KTM Duke 390
+         </td>
+         <td>
+          ₹2.48 Lakh
+         </td>
+         <td>
+          Verified Seller
+         </td>
+         <td>
+          Test ride request
+         </td>
+         <td>
+          <span class="status warn">
+           Scheduled
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Honda CB350
+         </td>
+         <td>
+          ₹1.78 Lakh
+         </td>
+         <td>
+          Verified Seller
+         </td>
+         <td>
+          Document check
+         </td>
+         <td>
+          <span class="status">
+           In review
+          </span>
+         </td>
+        </tr>
+       </table>
+      </div>
+     </article>
+    </section>
+    <section class="dash-panel" id="buyer-saved">
+     <div class="panel-title">
+      <div>
+       <span class="kicker">
+        MY SHORTLIST
+       </span>
+       <h2>
+        Saved Bikes
+       </h2>
+       <p>
+        Compare condition, price and seller response before booking your next test ride.
+       </p>
+      </div>
+     </div>
+     <div class="mini-bike-grid">
+      <article class="mini-bike-card">
+       <img src="assets/images/uploaded-bike-01.webp"/>
+       <div>
+        <span class="status good">
+         Verified
+        </span>
+        <h3>
+         BMW S 1000 RR
+        </h3>
+        <p>
+         2023 • 6,900 km • Bengaluru
+        </p>
+        <strong>
+         ₹18.90 Lakh
+        </strong>
+       </div>
+      </article>
+      <article class="mini-bike-card">
+       <img src="assets/images/uploaded-bike-03.webp"/>
+       <div>
+        <span class="status good">
+         Verified
+        </span>
+        <h3>
+         Kawasaki Ninja ZX-10R
+        </h3>
+        <p>
+         2022 • 9,100 km • Hyderabad
+        </p>
+        <strong>
+         ₹14.75 Lakh
+        </strong>
+       </div>
+      </article>
+      <article class="mini-bike-card">
+       <img src="assets/images/uploaded-bike-07.webp"/>
+       <div>
+        <span class="status warn">
+         Price Drop
+        </span>
+        <h3>
+         BMW S1000RR
+        </h3>
+        <p>
+         2021 • 12,400 km • Pune
+        </p>
+        <strong>
+         ₹16.40 Lakh
+        </strong>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="dash-panel" id="buyer-enquiries">
+     <div class="panel-title">
+      <span class="kicker">
+       SELLER COMMUNICATION
+      </span>
+      <h2>
+       My Enquiries
+      </h2>
+      <p>
+       Track every question, price discussion and document request in one place.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Open Conversations
+       </h3>
+       <div class="message-list">
+        <div>
+         <i class="fa-solid fa-user-check">
+         </i>
+         <div>
+          <strong>
+           Premium Bikes Bengaluru
+          </strong>
+          <p>
+           BMW S 1000 RR inspection report is ready.
+          </p>
+         </div>
+         <span>
+          10 min
+         </span>
+        </div>
+        <div>
+         <i class="fa-solid fa-shop">
+         </i>
+         <div>
+          <strong>
+           KTM Verified Seller
+          </strong>
+          <p>
+           Test ride confirmed for Saturday, 11:00 AM.
+          </p>
+         </div>
+         <span>
+          2 hr
+         </span>
+        </div>
+        <div>
+         <i class="fa-solid fa-file-shield">
+         </i>
+         <div>
+          <strong>
+           STACKLY Support
+          </strong>
+          <p>
+           RC verification has been completed.
+          </p>
+         </div>
+         <span>
+          Yesterday
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        Enquiry Status
+       </h3>
+       <div class="bar-chart horizontal">
+        <div>
+         <span>
+          Seller Replied
+         </span>
+         <div class="bar-track">
+          <i style="width:80%">
+          </i>
+         </div>
+         <b>
+          8
+         </b>
+        </div>
+        <div>
+         <span>
+          Awaiting Reply
+         </span>
+         <div class="bar-track">
+          <i style="width:35%">
+          </i>
+         </div>
+         <b>
+          3
+         </b>
+        </div>
+        <div>
+         <span>
+          Closed
+         </span>
+         <div class="bar-track">
+          <i style="width:55%">
+          </i>
+         </div>
+         <b>
+          5
+         </b>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="dash-panel" id="buyer-rides">
+     <div class="panel-title">
+      <span class="kicker">
+       TEST RIDE PLANNER
+      </span>
+      <h2>
+       Upcoming Test Rides
+      </h2>
+      <p>
+       Review your appointments, locations and pre-ride checklist.
+      </p>
+     </div>
+     <div class="ride-cards">
+      <article class="ride-card">
+       <div class="date-block">
+        <strong>
+         16
+        </strong>
+        <span>
+         AUG
+        </span>
+       </div>
+       <div>
+        <h3>
+         KTM Duke 390
+        </h3>
+        <p>
+         <i class="fa-solid fa-location-dot">
+         </i>
+         HSR Layout, Bengaluru
+        </p>
+        <p>
+         <i class="fa-solid fa-clock">
+         </i>
+         11:00 AM – 11:30 AM
+        </p>
+       </div>
+       <span class="status good">
+        Confirmed
+       </span>
+      </article>
+      <article class="ride-card">
+       <div class="date-block">
+        <strong>
+         18
+        </strong>
+        <span>
+         AUG
+        </span>
+       </div>
+       <div>
+        <h3>
+         Honda CB350
+        </h3>
+        <p>
+         <i class="fa-solid fa-location-dot">
+         </i>
+         Indiranagar, Bengaluru
+        </p>
+        <p>
+         <i class="fa-solid fa-clock">
+         </i>
+         4:30 PM – 5:00 PM
+        </p>
+       </div>
+       <span class="status warn">
+        Pending
+       </span>
+      </article>
+     </div>
+     <article class="dash-card">
+      <h3>
+       Before You Ride
+      </h3>
+      <div class="check-grid">
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Carry valid driving licence
+       </span>
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Inspect cold-start behaviour
+       </span>
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Check braking and steering feel
+       </span>
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Match chassis/engine details with RC
+       </span>
+      </div>
+     </article>
+    </section>
+    <section class="dash-panel" id="buyer-insights">
+     <div class="panel-title">
+      <span class="kicker">
+       PERSONALIZED ANALYTICS
+      </span>
+      <h2>
+       Bike Insights
+      </h2>
+      <p>
+       Understand how your shortlist compares by price, mileage, ownership and performance.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Average Asking Price
+       </h3>
+       <div class="column-chart">
+        <div>
+         <i style="height:55%">
+         </i>
+         <span>
+          Commuter
+         </span>
+        </div>
+        <div>
+         <i style="height:68%">
+         </i>
+         <span>
+          Roadster
+         </span>
+        </div>
+        <div>
+         <i style="height:84%">
+         </i>
+         <span>
+          Sports
+         </span>
+        </div>
+        <div>
+         <i style="height:96%">
+         </i>
+         <span>
+          Premium
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        What Matters Most to You
+       </h3>
+       <div class="radar-wrap">
+        <svg class="radar-chart" viewbox="0 0 320 280">
+         <polygon class="radar-grid" points="160,25 270,90 235,220 85,220 50,90">
+         </polygon>
+         <polygon class="radar-data" points="160,42 238,105 225,195 100,205 68,104">
+         </polygon>
+         <text x="143" y="16">
+          Condition
+         </text>
+         <text x="262" y="92">
+          Price
+         </text>
+         <text x="223" y="245">
+          Service
+         </text>
+         <text x="30" y="245">
+          Mileage
+         </text>
+         <text x="2" y="92">
+          Brand
+         </text>
+        </svg>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="dash-panel" id="buyer-profile">
+     <div class="panel-title">
+      <span class="kicker">
+       ACCOUNT SETTINGS
+      </span>
+      <h2>
+       Profile
+      </h2>
+      <p>
+       Keep your buyer details updated for smoother enquiries and test-ride confirmations.
+      </p>
+     </div>
+     <div class="profile-layout">
+      <article class="dash-card profile-summary">
+       <div class="avatar large">
+        WB
+       </div>
+       <h3>
+        Welcome back
+       </h3>
+       <p data-dashboard-email>
+        buyer@example.com
+       </p>
+       <span class="status good">
+        <i class="fa-solid fa-shield-halved">
+        </i>
+        Identity verified
+       </span>
+      </article>
+      <article class="dash-card">
+       <div class="profile-form" data-profile-form>
+        <div>
+         <label for="profileName">
+          Full Name
+         </label>
+          <input class="input" id="profileName" required value=""/>
+        </div>
+        <div>
+         <label for="profileEmail">
+         Email
+         </label>
+         <input class="input" data-dashboard-email-input id="profileEmail" required type="email" value="buyer@example.com"/>
+        </div>
+        <div>
+         <label for="profileMobile">
+          Mobile
+         </label>
+         <input class="input" id="profileMobile" required value="+91 98765 43210"/>
+        </div>
+        <div>
+         <label for="profileCity">
+          Preferred City
+         </label>
+         <input class="input" id="profileCity" required value="Bengaluru"/>
+        </div>
+        <div aria-live="polite" class="form-message profile-message" data-profile-message>
+        </div>
+        <button class="btn btn-primary" type="button" data-profile-save>
+         Save Changes
+        </button>
+       </div>
+      </article>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Sell Your Bike | STACKLY Bikes
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container nav">
+    <a class="brand" href="/STACKLY-Used-Bike-Marketplace/index.html">
+      <img class="brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+     </a>
+    <nav class="navlinks">
+     <a href="/STACKLY-Used-Bike-Marketplace/index.html">
+      Home
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/about.html">
+      About
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/used-bike.html">
+      Used Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/sell-your-bike.html">
+      Sell Your Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/blog.html">
+      Blog
+     </a>
+     <a href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/contact.html">
+      Contact
+     </a>
+     <a class="mobile-signin-link" href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/signin.html">
+      Sign In
+     </a>
+    </nav>
+    <div class="actions">
+     <a class="btn btn-outline" href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/signin.html">
+      Sign In
+     </a>
+    </div>
+    <button aria-expanded="false" aria-label="Open navigation" class="mobile-toggle btn btn-outline" type="button">
+     <i class="fa-solid fa-bars">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main>
+   <section class="page-hero" style="--page-img:url('assets/images/sell-bike-hero-bg.webp')">
+    <div class="container">
+     <span class="kicker">
+      SELL YOUR BIKE
+     </span>
+     <h1>
+      Turn Your Motorcycle Into a Better Listing
+     </h1>
+     <p>
+      Present the right information, understand your bike's resale factors and connect with buyers who know what they are looking for.
+     </p>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container split">
+     <div class="panel">
+      <span class="kicker">
+       START YOUR VALUATION
+      </span>
+      <h2>
+       Tell Us About Your Bike
+      </h2>
+      <form class="form" id="sellBikeForm">
+       <div aria-live="polite" class="form-message" id="sellBikeMessage"></div>
+       <div class="form-grid">
+        <input class="input" id="sellBikeBrand" placeholder="Brand"/>
+        <input class="input" id="sellBikeModel" placeholder="Model"/>
+        <input class="input" id="sellBikeYear" placeholder="Model Year"/>
+        <input class="input" id="sellBikeKilometres" placeholder="Kilometres Driven"/>
+        <input class="input" id="sellBikeCity" placeholder="City"/>
+         <div class="contact-select" data-contact-select>
+          <button aria-expanded="false" class="contact-select-trigger" type="button">
+           <span>
+            Ownership
+           </span>
+           <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <input name="ownership" type="hidden" value=""/>
+          <div class="contact-select-menu">
+           <button class="active" type="button" data-value="">
+            Ownership
+           </button>
+           <button type="button" data-value="1st Owner">
+            1st Owner
+           </button>
+           <button type="button" data-value="2nd Owner">
+            2nd Owner
+           </button>
+           <button type="button" data-value="3rd Owner">
+            3rd Owner
+           </button>
+          </div>
+         </div>
+       </div>
+        <textarea class="input" id="sellBikeDetails" placeholder="Describe service history, condition, tyres, insurance, upgrades and any repairs"></textarea>
+        <button class="btn btn-primary" type="submit">
+        Get Estimated Value
+       </button>
+      </form>
+     </div>
+     <img alt="Sell used motorcycle" src="assets/images/user-bike-set/bike-08-cruiser.webp"/>
+    </div>
+   </section>
+   <section class="section alt">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="kicker">
+        SELLING PROCESS
+       </span>
+       <h2>
+        Four Steps From Bike to Buyer
+       </h2>
+      </div>
+     </div>
+     <div class="grid4">
+      <article class="card feature">
+       <i class="fa-solid fa-keyboard">
+       </i>
+       <h3>
+        1. Add Details
+       </h3>
+       <p>
+        Enter model, year, kilometres, ownership and location accurately.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-camera">
+       </i>
+       <h3>
+        2. Present the Bike
+       </h3>
+       <p>
+        Upload clear photos and explain condition, service history and upgrades.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-comments-dollar">
+       </i>
+       <h3>
+        3. Handle Enquiries
+       </h3>
+       <p>
+        Speak with interested buyers and discuss price with the facts already visible.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-file-signature">
+       </i>
+       <h3>
+        4. Complete Transfer
+       </h3>
+       <p>
+        Finish payment, handover and ownership transfer using proper documentation.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="kicker">
+        BETTER LISTING CONTENT
+       </span>
+       <h2>
+        What Serious Buyers Want to Know
+       </h2>
+      </div>
+     </div>
+     <div class="grid4">
+      <article class="card feature">
+       <i class="fa-solid fa-gauge-high">
+       </i>
+       <h3>
+        Actual Usage
+       </h3>
+       <p>
+        Share honest kilometres and the kind of riding the motorcycle was used for.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-screwdriver-wrench">
+       </i>
+       <h3>
+        Maintenance
+       </h3>
+       <p>
+        Mention recent services, tyre changes, battery replacement and major consumables.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-shield">
+       </i>
+       <h3>
+        Insurance &amp; RC
+       </h3>
+       <p>
+        Explain document validity and whether the motorcycle has active finance.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-wand-magic-sparkles">
+       </i>
+       <h3>
+        Upgrades &amp; Modifications
+       </h3>
+       <p>
+        List meaningful accessories or modifications clearly instead of hiding them.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section alt">
+    <div class="container split">
+     <img alt="Used bike photography" src="assets/images/user-bike-set/bike-02-ducati-red.webp"/>
+     <div class="panel">
+      <span class="kicker">
+       PHOTO GUIDE
+      </span>
+      <h2>
+       Good Photos Build Faster Trust
+      </h2>
+      <p>
+       Use daylight, a clean background and clear angles. Show both sides, tyres, cluster, engine area and visible damage.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="kicker">
+        VALUATION FACTORS
+       </span>
+       <h2>
+        What Affects Your Resale Price?
+       </h2>
+      </div>
+     </div>
+     <div class="grid4">
+      <article class="card feature">
+       <i class="fa-solid fa-calendar">
+       </i>
+       <h3>
+        Age
+       </h3>
+       <p>
+        Model year and registration age influence depreciation.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-road">
+       </i>
+       <h3>
+        Kilometres
+       </h3>
+       <p>
+        Lower kilometres can support value when the bike is well maintained.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-star">
+       </i>
+       <h3>
+        Condition
+       </h3>
+       <p>
+        Mechanical health, tyres, paint, plastics and crash history all matter.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-chart-line">
+       </i>
+       <h3>
+        Market Demand
+       </h3>
+       <p>
+        Popular models, variants and colours may sell more easily in some cities.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section alt">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="kicker">
+        PREPARE BEFORE LISTING
+       </span>
+       <h2>
+        Small Improvements Can Make a Big Difference
+       </h2>
+      </div>
+     </div>
+     <div class="grid4">
+      <article class="card feature">
+       <i class="fa-solid fa-soap">
+       </i>
+       <h3>
+        Clean Properly
+       </h3>
+       <p>
+        A clean motorcycle is easier to inspect and presents better in photos.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-oil-can">
+       </i>
+       <h3>
+        Fix Basic Maintenance
+       </h3>
+       <p>
+        Address obvious issues such as low fluids, loose chain or weak battery.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-folder-open">
+       </i>
+       <h3>
+        Collect Records
+       </h3>
+       <p>
+        Keep RC, insurance, service invoices and loan-closure paperwork ready.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-tag">
+       </i>
+       <h3>
+        Set a Realistic Ask
+       </h3>
+       <p>
+        Price with room for negotiation, but stay aligned with age and condition.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container split">
+     <div class="panel">
+      <span class="kicker">
+       SAFE SELLING
+      </span>
+      <h2>
+       Protect Yourself During the Deal
+      </h2>
+      <p>
+       Meet safely, verify the buyer, protect sensitive documents, confirm payment and complete ownership transfer promptly.
+      </p>
+     </div>
+     <img alt="Safe motorcycle sale" loading="lazy" src="assets/images/user-bike-set/bike-10-red-rider.webp"/>
+    </div>
+   </section>
+   <section class="section alt">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="kicker">
+        SELLER QUESTIONS
+       </span>
+       <h2>
+        Common Questions Before You List
+       </h2>
+      </div>
+     </div>
+     <div class="grid3">
+      <article class="card feature">
+       <i class="fa-solid fa-circle-question">
+       </i>
+       <h3>
+        Should I service first?
+       </h3>
+       <p>
+        Fix obvious maintenance items if they materially affect ride quality or buyer confidence.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-circle-question">
+       </i>
+       <h3>
+        Can I sell with finance?
+       </h3>
+       <p>
+        Outstanding finance generally needs proper closure before clean ownership transfer.
+       </p>
+      </article>
+      <article class="card feature">
+       <i class="fa-solid fa-circle-question">
+       </i>
+       <h3>
+        How much should I negotiate?
+       </h3>
+       <p>
+        Use condition and comparable listings to decide a realistic minimum selling price.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container cta">
+     <div>
+      <span class="kicker">
+       READY TO LIST?
+      </span>
+      <h2>
+       Create a motorcycle listing buyers can understand quickly.
+      </h2>
+      <p>
+       Clear facts, good photos and sensible pricing are the foundation of a better used-bike sale.
+      </p>
+     </div>
+     <a class="btn btn-primary" href="404.html">
+      Start My Listing
+     </a>
+    </div>
+   </section>
+   <section class="section visual-story">
+    <div class="container split story-split">
+     <img alt="Large motorcycle dealership inventory" src="assets/images/uploaded-bike-03.webp"/>
+     <div class="panel">
+      <span class="kicker">
+       PRESENT IT LIKE A PROFESSIONAL
+      </span>
+      <h2>
+       A Better Listing Creates Better Buyer Enquiries.
+      </h2>
+      <p>
+       Good buyers want facts before they call. Add photos, year, kilometres, ownership, insurance, service history, tyres and modifications.
+      </p>
+      <p>
+       A clear listing builds value and reduces repeated questions.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section alt visual-story">
+    <div class="container split story-split reverse">
+     <div class="panel">
+      <span class="kicker">
+       PRICE WITH CONTEXT
+      </span>
+      <h2>
+       Condition and History Influence the Final Value.
+      </h2>
+      <p>
+       Same-year bikes can sell differently because of kilometres, owners, service quality, tyres, accidents, accessories and local demand.
+      </p>
+      <div class="checks">
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Start with a market-aware expected value
+       </span>
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Explain recent maintenance and upgrades
+       </span>
+       <span>
+        <i class="fa-solid fa-check">
+        </i>
+        Keep documents ready for serious buyers
+       </span>
+      </div>
+     </div>
+     <img alt="Motorcycle displayed against a dark studio background" src="assets/images/uploaded-bike-10.webp"/>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-grid">
+    <div>
+     <a class="brand footer-brand" href="/STACKLY-Used-Bike-Marketplace/index.html">
+      <img class="brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+     </a>
+     <p>
+      Trusted used-bike marketplace for verified second-hand motorcycles, transparent pricing, inspections and secure ownership transfer support.
+     </p>
+     <div class="social-links">
+      <a aria-label="Instagram" href="404.html">
+       <i class="fa-brands fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Facebook" href="404.html">
+       <i class="fa-brands fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="X" href="404.html">
+       <i class="fa-brands fa-x-twitter">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      Marketplace
+     </h3>
+     <a href="/STACKLY-Used-Bike-Marketplace/index.html">
+      Home
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/about.html">
+      About
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/used-bike.html">
+      Used Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/sell-your-bike.html">
+      Sell Your Bike
+     </a>
+     <a href="/STACKLY-Used-Bike-Marketplace/blog.html">
+      Blog
+     </a>
+     <a href="http://127.0.0.1:5500/STACKLY-Used-Bike-Marketplace/contact.html">
+      Contact
+     </a>
+    </div>
+    <div>
+     <h3>
+      Buyer &amp; Seller
+     </h3>
+     <a href="404.html">
+      Bike Details
+     </a>
+     <a href="404.html">
+      Sign In
+     </a>
+     <a href="404.html">
+      Register
+     </a>
+     <a href="404.html">
+      My Dashboard
+     </a>
+     <a href="404.html">
+      Admin Dashboard
+     </a>
+     <a href="404.html">
+      Contact Support
+     </a>
+    </div>
+    <div class="footer-contact">
+     <h3>
+      Contact
+     </h3>
+     <p>
+      <i class="fa-solid fa-phone"></i>
+      <span>+91 8000 123 456</span>
+     </p>
+     <p>
+      <i class="fa-solid fa-envelope"></i>
+      <span>support@stacklybikes.com</span>
+     </p>
+     <p>
+      <i class="fa-solid fa-location-dot"></i>
+      <span>HSR Layout, Bengaluru, India</span>
+     </p>
+     <p>
+      <i class="fa-solid fa-clock"></i>
+      <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+     </p>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    <p>
+     © 2026 STACKLY Bikes. All Rights Reserved.
+    </p>
+      <p>
+       <a href="404.html">
+        Verified Bikes &bull; Fair Pricing &bull; Secure Deals
+       </a>
+      </p>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

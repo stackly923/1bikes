@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Admin Dashboard | STACKLY Bikes
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="dashboard-page admin-theme">
+  <div class="dash-mobilebar">
+   <a class="dash-mobile-logo" href="index.html">
+    <img class="brand-logo dash-brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+   </a>
+   <button aria-label="Open dashboard menu" class="dash-menu-toggle" type="button">
+    <i class="fa-solid fa-bars">
+    </i>
+   </button>
+  </div>
+  <div class="dashboard-shell">
+   <aside class="dashboard-sidebar">
+    <a class="dash-logo" href="index.html">
+     <img class="brand-logo dash-brand-logo" src="assets/stackly-logo-white.webp" alt="STACKLY"/>
+    </a>
+    <nav class="dash-nav">
+     <button class="dash-link active" data-panel="admin-overview">
+      <i class="fa-solid fa-chart-pie">
+      </i>
+      <span>
+       Overview
+      </span>
+     </button>
+     <button class="dash-link" data-panel="admin-listings">
+      <i class="fa-solid fa-list-check">
+      </i>
+      <span>
+       Listings
+      </span>
+     </button>
+     <button class="dash-link" data-panel="admin-inspections">
+      <i class="fa-solid fa-screwdriver-wrench">
+      </i>
+      <span>
+       Inspections
+      </span>
+     </button>
+     <button class="dash-link" data-panel="admin-sellers">
+      <i class="fa-solid fa-store">
+      </i>
+      <span>
+       Sellers
+      </span>
+     </button>
+     <button class="dash-link" data-panel="admin-deals">
+      <i class="fa-solid fa-handshake">
+      </i>
+      <span>
+       Transactions
+      </span>
+     </button>
+     <button class="dash-link" data-panel="admin-analytics">
+      <i class="fa-solid fa-chart-column">
+      </i>
+      <span>
+       Analytics
+      </span>
+     </button>
+     <button class="dash-link" data-panel="admin-support">
+      <i class="fa-solid fa-headset">
+      </i>
+      <span>
+       Support
+      </span>
+     </button>
+    </nav>
+    <div class="dash-side-actions">
+     <a href="index.html">
+      <i class="fa-solid fa-house">
+      </i>
+      <span>
+       Home
+      </span>
+     </a>
+     <a href="signin.html">
+      <i class="fa-solid fa-right-from-bracket">
+      </i>
+      <span>
+       Logout
+      </span>
+     </a>
+    </div>
+   </aside>
+   <main class="dashboard-main">
+    <div class="dash-topbar">
+     <div>
+      <span class="kicker">
+       MARKETPLACE ADMIN
+      </span>
+      <h1>
+       Operations Control
+      </h1>
+     </div>
+     <div class="dash-user">
+      <div class="avatar">
+       SA
+      </div>
+     <div>
+       <strong>
+        Welcome back
+       </strong>
+       <span data-dashboard-email>
+        admin@example.com
+       </span>
+      </div>
+     </div>
+    </div>
+    <section class="dash-panel active" id="admin-overview">
+     <div class="dash-metrics">
+      <article class="dash-metric">
+       <i class="fa-solid fa-motorcycle">
+       </i>
+       <div>
+        <span>
+         Active Listings
+        </span>
+        <strong>
+         2,584
+        </strong>
+        <small>
+         +7.4% this month
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-magnifying-glass">
+       </i>
+       <div>
+        <span>
+         Pending Reviews
+        </span>
+        <strong>
+         86
+        </strong>
+        <small>
+         19 high priority
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-calendar-check">
+       </i>
+       <div>
+        <span>
+         Test Rides Today
+        </span>
+        <strong>
+         42
+        </strong>
+        <small>
+         91% confirmed
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-handshake">
+       </i>
+       <div>
+        <span>
+         Deals This Month
+        </span>
+        <strong>
+         318
+        </strong>
+        <small>
+         ₹5.8 Cr GMV
+        </small>
+       </div>
+      </article>
+     </div>
+     <div class="dash-grid two-one">
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          MARKETPLACE GROWTH
+         </span>
+         <h3>
+          Listings &amp; Deals Trend
+         </h3>
+        </div>
+        <span class="status good">
+         12 Months
+        </span>
+       </div>
+       <div class="line-chart">
+        <svg viewbox="0 0 640 250">
+         <g class="chart-grid">
+          <line x1="40" x2="620" y1="40" y2="40">
+          </line>
+          <line x1="40" x2="620" y1="95" y2="95">
+          </line>
+          <line x1="40" x2="620" y1="150" y2="150">
+          </line>
+          <line x1="40" x2="620" y1="205" y2="205">
+          </line>
+         </g>
+         <polyline class="line-one" points="40,190 135,174 230,160 325,132 420,110 515,92 610,62">
+         </polyline>
+         <polyline class="line-two" points="40,205 135,194 230,188 325,170 420,155 515,142 610,120">
+         </polyline>
+        </svg>
+        <div class="chart-legend">
+         <span>
+          <i class="legend purple">
+          </i>
+          Active Listings
+         </span>
+         <span>
+          <i class="legend soft">
+          </i>
+          Completed Deals
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          LISTING HEALTH
+         </span>
+         <h3>
+          Approval Mix
+         </h3>
+        </div>
+       </div>
+       <div class="pie-wrap">
+        <div class="pie-chart admin-pie">
+        </div>
+        <div class="pie-legend">
+         <span>
+          <b>
+           68%
+          </b>
+          Approved
+         </span>
+         <span>
+          <b>
+           17%
+          </b>
+          Review
+         </span>
+         <span>
+          <b>
+           9%
+          </b>
+          Rework
+         </span>
+         <span>
+          <b>
+           6%
+          </b>
+          Rejected
+         </span>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          INSPECTION LOAD
+         </span>
+         <h3>
+          Daily Capacity
+         </h3>
+        </div>
+       </div>
+       <div class="bar-chart horizontal">
+        <div>
+         <span>
+          Bengaluru
+         </span>
+         <div class="bar-track">
+          <i style="width:88%">
+          </i>
+         </div>
+         <b>
+          88%
+         </b>
+        </div>
+        <div>
+         <span>
+          Hyderabad
+         </span>
+         <div class="bar-track">
+          <i style="width:72%">
+          </i>
+         </div>
+         <b>
+          72%
+         </b>
+        </div>
+        <div>
+         <span>
+          Pune
+         </span>
+         <div class="bar-track">
+          <i style="width:64%">
+          </i>
+         </div>
+         <b>
+          64%
+         </b>
+        </div>
+        <div>
+         <span>
+          Chennai
+         </span>
+         <div class="bar-track">
+          <i style="width:56%">
+          </i>
+         </div>
+         <b>
+          56%
+         </b>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <div class="dash-card-head">
+        <div>
+         <span class="kicker">
+          QUALITY RADAR
+         </span>
+         <h3>
+          Marketplace Health
+         </h3>
+        </div>
+       </div>
+       <div class="radar-wrap">
+        <svg class="radar-chart" viewbox="0 0 320 280">
+         <polygon class="radar-grid" points="160,25 270,90 235,220 85,220 50,90">
+         </polygon>
+         <polygon class="radar-grid inner" points="160,70 225,108 205,185 115,185 95,108">
+         </polygon>
+         <polygon class="radar-data" points="160,34 258,96 225,202 96,208 66,98">
+         </polygon>
+         <text x="142" y="16">
+          Trust
+         </text>
+         <text x="260" y="92">
+          Speed
+         </text>
+         <text x="220" y="245">
+          Quality
+         </text>
+         <text x="28" y="245">
+          Support
+         </text>
+         <text x="0" y="92">
+          Supply
+         </text>
+        </svg>
+       </div>
+      </article>
+     </div>
+     <article class="dash-card">
+      <div class="dash-card-head">
+       <div>
+        <span class="kicker">
+         LATEST REVIEW QUEUE
+        </span>
+        <h3>
+         Recent Listing Reviews
+        </h3>
+       </div>
+       <a data-open-panel="admin-listings" href="#">
+        View Listings
+       </a>
+      </div>
+      <div class="table-wrap">
+       <table class="table">
+        <tr>
+         <th>
+          Listing
+         </th>
+         <th>
+          Seller
+         </th>
+         <th>
+          Inspection
+         </th>
+         <th>
+          Price
+         </th>
+         <th>
+          Status
+         </th>
+        </tr>
+        <tr>
+         <td>
+          Ducati Panigale V4
+         </td>
+         <td>
+          Elite Motors
+         </td>
+         <td>
+          Completed
+         </td>
+         <td>
+          ₹24.8 Lakh
+         </td>
+         <td>
+          <span class="status good">
+           Approved
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Kawasaki Ninja ZX-10R
+         </td>
+         <td>
+          Individual
+         </td>
+         <td>
+          Pending
+         </td>
+         <td>
+          ₹14.7 Lakh
+         </td>
+         <td>
+          <span class="status warn">
+           Review
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Triumph Street Triple
+         </td>
+         <td>
+          Dealer Partner
+         </td>
+         <td>
+          Completed
+         </td>
+         <td>
+          ₹8.4 Lakh
+         </td>
+         <td>
+          <span class="status">
+           Rework
+          </span>
+         </td>
+        </tr>
+       </table>
+      </div>
+     </article>
+    </section>
+    <section class="dash-panel" id="admin-listings">
+     <div class="panel-title">
+      <span class="kicker">
+       INVENTORY CONTROL
+      </span>
+      <h2>
+       Bike Listings
+      </h2>
+      <p>
+       Approve, pause or return listings that do not meet marketplace quality standards.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Listings by Category
+       </h3>
+       <div class="column-chart">
+        <div>
+         <i style="height:72%">
+         </i>
+         <span>
+          Commuter
+         </span>
+        </div>
+        <div>
+         <i style="height:88%">
+         </i>
+         <span>
+          Sports
+         </span>
+        </div>
+        <div>
+         <i style="height:62%">
+         </i>
+         <span>
+          Cruiser
+         </span>
+        </div>
+        <div>
+         <i style="height:76%">
+         </i>
+         <span>
+          Roadster
+         </span>
+        </div>
+        <div>
+         <i style="height:48%">
+         </i>
+         <span>
+          Touring
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        Review SLA
+       </h3>
+       <div class="progress-ring-wrap">
+        <div class="progress-ring">
+         <span>
+          91%
+         </span>
+        </div>
+        <div>
+         <strong>
+          Listings reviewed within 12 hours
+         </strong>
+         <p>
+          Target: 95%. Current backlog is concentrated in premium-bike inspections.
+         </p>
+        </div>
+       </div>
+      </article>
+     </div>
+     <article class="dash-card">
+      <div class="table-wrap">
+       <table class="table">
+        <tr>
+         <th>
+          ID
+         </th>
+         <th>
+          Bike
+         </th>
+         <th>
+          City
+         </th>
+         <th>
+          Seller Type
+         </th>
+         <th>
+          Price
+         </th>
+         <th>
+          Status
+         </th>
+        </tr>
+        <tr>
+         <td>
+          #BK2584
+         </td>
+         <td>
+          BMW S 1000 RR
+         </td>
+         <td>
+          Bengaluru
+         </td>
+         <td>
+          Dealer
+         </td>
+         <td>
+          ₹18.9L
+         </td>
+         <td>
+          <span class="status good">
+           Live
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          #BK2583
+         </td>
+         <td>
+          Royal Enfield Classic 350
+         </td>
+         <td>
+          Mysuru
+         </td>
+         <td>
+          Individual
+         </td>
+         <td>
+          ₹1.62L
+         </td>
+         <td>
+          <span class="status warn">
+           Review
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          #BK2582
+         </td>
+         <td>
+          Ducati Panigale V4
+         </td>
+         <td>
+          Hyderabad
+         </td>
+         <td>
+          Dealer
+         </td>
+         <td>
+          ₹24.8L
+         </td>
+         <td>
+          <span class="status good">
+           Live
+          </span>
+         </td>
+        </tr>
+       </table>
+      </div>
+     </article>
+    </section>
+    <section class="dash-panel" id="admin-inspections">
+     <div class="panel-title">
+      <span class="kicker">
+       150+ POINT CHECKS
+      </span>
+      <h2>
+       Inspection Operations
+      </h2>
+      <p>
+       Track field inspections, report completion and quality exceptions.
+      </p>
+     </div>
+     <div class="dash-metrics">
+      <article class="dash-metric">
+       <i class="fa-solid fa-clipboard-check">
+       </i>
+       <div>
+        <span>
+         Today
+        </span>
+        <strong>
+         118
+        </strong>
+        <small>
+         Inspections booked
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-circle-check">
+       </i>
+       <div>
+        <span>
+         Completed
+        </span>
+        <strong>
+         84
+        </strong>
+        <small>
+         71% of schedule
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-triangle-exclamation">
+       </i>
+       <div>
+        <span>
+         Exceptions
+        </span>
+        <strong>
+         11
+        </strong>
+        <small>
+         Need supervisor review
+        </small>
+       </div>
+      </article>
+      <article class="dash-metric">
+       <i class="fa-solid fa-stopwatch">
+       </i>
+       <div>
+        <span>
+         Avg. Time
+        </span>
+        <strong>
+         47m
+        </strong>
+        <small>
+         Per inspection
+        </small>
+       </div>
+      </article>
+     </div>
+     <article class="dash-card">
+      <h3>
+       Inspection Stage Completion
+      </h3>
+      <div class="bar-chart horizontal">
+       <div>
+        <span>
+         Documents
+        </span>
+        <div class="bar-track">
+         <i style="width:96%">
+         </i>
+        </div>
+        <b>
+         96%
+        </b>
+       </div>
+       <div>
+        <span>
+         Engine &amp; Gearbox
+        </span>
+        <div class="bar-track">
+         <i style="width:91%">
+         </i>
+        </div>
+        <b>
+         91%
+        </b>
+       </div>
+       <div>
+        <span>
+         Frame &amp; Suspension
+        </span>
+        <div class="bar-track">
+         <i style="width:88%">
+         </i>
+        </div>
+        <b>
+         88%
+        </b>
+       </div>
+       <div>
+        <span>
+         Road Test
+        </span>
+        <div class="bar-track">
+         <i style="width:76%">
+         </i>
+        </div>
+        <b>
+         76%
+        </b>
+       </div>
+      </div>
+     </article>
+    </section>
+    <section class="dash-panel" id="admin-sellers">
+     <div class="panel-title">
+      <span class="kicker">
+       SELLER NETWORK
+      </span>
+      <h2>
+       Seller Performance
+      </h2>
+      <p>
+       Monitor dealer partners and individual sellers by response quality, listing accuracy and deal conversion.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Seller Mix
+       </h3>
+       <div class="pie-wrap">
+        <div class="pie-chart seller-pie">
+        </div>
+        <div class="pie-legend">
+         <span>
+          <b>
+           55%
+          </b>
+          Individual
+         </span>
+         <span>
+          <b>
+           31%
+          </b>
+          Dealers
+         </span>
+         <span>
+          <b>
+           14%
+          </b>
+          Premium Partners
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        Top Seller Scores
+       </h3>
+       <div class="seller-score">
+        <div>
+         <span>
+          Elite Motors Bengaluru
+         </span>
+         <b>
+          96
+         </b>
+        </div>
+        <div class="bar-track">
+         <i style="width:96%">
+         </i>
+        </div>
+        <div>
+         <span>
+          RideHub Hyderabad
+         </span>
+         <b>
+          91
+         </b>
+        </div>
+        <div class="bar-track">
+         <i style="width:91%">
+         </i>
+        </div>
+        <div>
+         <span>
+          Premium Bikes Pune
+         </span>
+         <b>
+          88
+         </b>
+        </div>
+        <div class="bar-track">
+         <i style="width:88%">
+         </i>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="dash-panel" id="admin-deals">
+     <div class="panel-title">
+      <span class="kicker">
+       SECURE TRANSACTIONS
+      </span>
+      <h2>
+       Deals &amp; Ownership Transfers
+      </h2>
+      <p>
+       Follow payment confirmations, RC-transfer milestones and marketplace support cases.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Monthly GMV
+       </h3>
+       <div class="column-chart">
+        <div>
+         <i style="height:52%">
+         </i>
+         <span>
+          Mar
+         </span>
+        </div>
+        <div>
+         <i style="height:64%">
+         </i>
+         <span>
+          Apr
+         </span>
+        </div>
+        <div>
+         <i style="height:72%">
+         </i>
+         <span>
+          May
+         </span>
+        </div>
+        <div>
+         <i style="height:83%">
+         </i>
+         <span>
+          Jun
+         </span>
+        </div>
+        <div>
+         <i style="height:94%">
+         </i>
+         <span>
+          Jul
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        Transfer Progress
+       </h3>
+       <div class="bar-chart horizontal">
+        <div>
+         <span>
+          Payment Verified
+         </span>
+         <div class="bar-track">
+          <i style="width:94%">
+          </i>
+         </div>
+         <b>
+          94%
+         </b>
+        </div>
+        <div>
+         <span>
+          RC Forms Signed
+         </span>
+         <div class="bar-track">
+          <i style="width:82%">
+          </i>
+         </div>
+         <b>
+          82%
+         </b>
+        </div>
+        <div>
+         <span>
+          RTO Submitted
+         </span>
+         <div class="bar-track">
+          <i style="width:70%">
+          </i>
+         </div>
+         <b>
+          70%
+         </b>
+        </div>
+        <div>
+         <span>
+          Transfer Closed
+         </span>
+         <div class="bar-track">
+          <i style="width:58%">
+          </i>
+         </div>
+         <b>
+          58%
+         </b>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="dash-panel" id="admin-analytics">
+     <div class="panel-title">
+      <span class="kicker">
+       MARKETPLACE INTELLIGENCE
+      </span>
+      <h2>
+       Analytics
+      </h2>
+      <p>
+       Use supply, demand and conversion trends to improve marketplace liquidity.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Lead-to-Deal Funnel
+       </h3>
+       <div class="funnel">
+        <div style="width:100%">
+         18,400 Views
+        </div>
+        <div style="width:78%">
+         7,920 Enquiries
+        </div>
+        <div style="width:56%">
+         2,480 Test Rides
+        </div>
+        <div style="width:34%">
+         842 Negotiations
+        </div>
+        <div style="width:20%">
+         318 Deals
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        Demand Radar
+       </h3>
+       <div class="radar-wrap">
+        <svg class="radar-chart" viewbox="0 0 320 280">
+         <polygon class="radar-grid" points="160,25 270,90 235,220 85,220 50,90">
+         </polygon>
+         <polygon class="radar-data" points="160,36 252,103 222,195 95,210 68,102">
+         </polygon>
+         <text x="138" y="16">
+          Sports
+         </text>
+         <text x="262" y="92">
+          Cruiser
+         </text>
+         <text x="215" y="245">
+          Touring
+         </text>
+         <text x="25" y="245">
+          Roadster
+         </text>
+         <text x="0" y="92">
+          Commuter
+         </text>
+        </svg>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="dash-panel" id="admin-support">
+     <div class="panel-title">
+      <span class="kicker">
+       CUSTOMER OPERATIONS
+      </span>
+      <h2>
+       Support Queue
+      </h2>
+      <p>
+       Prioritize buyer, seller and ownership-transfer issues by urgency.
+      </p>
+     </div>
+     <div class="dash-grid equal">
+      <article class="dash-card">
+       <h3>
+        Open Tickets
+       </h3>
+       <div class="message-list">
+        <div>
+         <i class="fa-solid fa-file-circle-question">
+         </i>
+         <div>
+          <strong>
+           RC Transfer Delay
+          </strong>
+          <p>
+           Buyer waiting 9 days for seller signature.
+          </p>
+         </div>
+         <span class="status warn">
+          High
+         </span>
+        </div>
+        <div>
+         <i class="fa-solid fa-indian-rupee-sign">
+         </i>
+         <div>
+          <strong>
+           Payment Confirmation
+          </strong>
+          <p>
+           Seller requesting transaction verification.
+          </p>
+         </div>
+         <span class="status">
+          Medium
+         </span>
+        </div>
+        <div>
+         <i class="fa-solid fa-motorcycle">
+         </i>
+         <div>
+          <strong>
+           Inspection Clarification
+          </strong>
+          <p>
+           Buyer wants brake-pad condition details.
+          </p>
+         </div>
+         <span class="status good">
+          Normal
+         </span>
+        </div>
+       </div>
+      </article>
+      <article class="dash-card">
+       <h3>
+        Resolution Performance
+       </h3>
+       <div class="progress-ring-wrap">
+        <div class="progress-ring">
+         <span>
+          93%
+         </span>
+        </div>
+        <div>
+         <strong>
+          Resolved within SLA
+         </strong>
+         <p>
+          Average first response: 18 minutes. Average closure time: 5.2 hours.
+         </p>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
